@@ -1,144 +1,131 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-	<title>Teledat.cl INTRANET</title>
-	<link rel="shortcut icon" href="favicon.ico" />	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<link rel="stylesheet" type="text/css" href="images/style.css">
-	
-	<script type="text/javascript" src="images/jquery.js"></script>
-	
-	<script type="type/javascript">
-		$(document).ready(function(){
-			$("#tab").click(function(){
-				console.log("clicked");
-				$("#extended-forecast").slideDown();
-			});
-		});
-	</script>
-</head>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ricardo Sanchez">
+    <title>Teledat INTRANET</title>
 
-<body id="page-body">
 
-    <div id="demo-top-bar">
 
-  <div id="demo-bar-inside">
 
-    <h2 id="demo-bar-badge">
-      <a href="http://www.teledat.cl/">www.teledat.cl</a>
-    </h2>
 
-    <div id="demo-bar-buttons">
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" ></script>
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="views/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <img class="rounded-start" src="views\img\teledat_logo.png" width="200px" height="70px">
+      <a class="navbar-brand" href="#">&nbsp; INTRANET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      </div>
+        <form name="form1" method="post" action="ingreso.php" autocomplete="off">
+          <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" 
+                    placeholder="usuario" aria-label="usuario" name="usr" id="usr">
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" 
+                    placeholder="clave" aria-label="clave" name="pswd" id="pswd">
+            </div>
+            <div class="col">
+                <input type="submit" name="button" id="button" value="Ingresar" class="btn btn-outline-success" />
+            </div>            
           </div>
+        </form>
+    </div>
+  </nav>
+</header>
 
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" >
+      <div class="carousel-item active">
+
+        <img class="bd-placeholder-img" src="views\img\image-slider-01.jpg" width="100%" height="100%">
+
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" src="views\img\image-slider-02.jpg" width="100%" height="100%">
+
+
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" src="views\img\image-slider-03.jpg" width="100%" height="100%">
+
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-</div>	
-	<img id="background-img" class="bg" src="images/2260149771_00cb406fd6_o.jpg" alt="">
-	
-	<div id="weather-info">
 
-	  <div id="extended-forecast">
-		
-    <p>Hi.</p>
-			
-	  </div>
-		
-		<div id="tab">
-			IntraNET</div>
-	<center>
-	  <form name="form1" method="post" action="ingreso.php" autocomplete="off">
-	    <table width="40%" border="1" align="center" cellpadding="0" cellspacing="0">
-		    <tr>
-		      <td colspan="3"><div align="left">Bienvienido</div></td>
-	        </tr>
-		    <tr>
-		      <td width="10%" rowspan="2">&nbsp;</td>
-		      <td>usuario:</td>
-		      <td><label for="usr"></label>
-	          <input type="text" name="usr" id="usr" /></td>
-	        </tr>
-		    <tr>
-		      <td>contraseña:</td>
-		      <td><label for="pswd"></label>
-	          <input type="password" name="pswd" id="pswd" /></td>
-	        </tr>
-		    <tr>
-		      <td colspan="3" align="center"><input type="submit" name="button" id="button" value="Enviar" /></td>
-	        </tr>
-	      </table>
-      </form>
-</center>
-    
-    
-    	
-</div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Regresar al Principio</a></p>
+    <p>&copy; 2022 Ricardo J. Sanchez Moreno &middot; 
+      <a href="#">Privacidad</a> &middot; 
+      <a href="#">Terminos</a>
+    </p>
+  </footer>
+</main>
 
 
 
-	
-	 <style type="text/css" style="display: none !important;">
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	body {
-		overflow-x: hidden;
-	}
-	#demo-top-bar {
-		text-align: left;
-		background: #222;
-		position: relative;
-		zoom: 1;
-		width: 100% !important;
-		z-index: 6000;
-		padding: 5px 0 5px;
-	}
-	#demo-bar-inside {
-		width: 940px;
-		margin: 0 auto;
-		position: relative;
-		overflow: hidden;
-	}
-	#demo-bar-buttons {
-		padding-top: 10px;
-		float: right;
-	}
-	#demo-bar-buttons a {
-		font-size: 12px;
-		margin-left: 20px;
-		color: white;
-		margin: 2px 0;
-		text-decoration: none;
-		font: 14px "Lucida Grande", Sans-Serif !important;
-	}
-	#demo-bar-buttons a:hover,
-	#demo-bar-buttons a:focus {
-		text-decoration: underline;
-	}
-	#demo-bar-badge {
-		display: inline-block;
-		width: 240px;
-		padding: 0 !important;
-		margin: 0 !important;
-		background-color: transparent !important;
-	}
-	#demo-bar-badge a {
-		display: block;
-		width: 100%;
-		height: 75px;
-		border-radius: 0;
-		bottom: auto;
-		margin: 0;
-		background: url(images/TELEDAT-02.jpg) no-repeat;
-		background-size: 100%;
-		overflow: hidden;
-		text-indent: -9999px;
-	}
-	#demo-bar-badge:before, #demo-bar-badge:after {
-		display: none !important;
-	}
-</style>	
 
 
-</body></html>
+  </body>
+</html>
