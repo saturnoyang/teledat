@@ -9,7 +9,15 @@ class DB {
 
 	function __construct() {
 		try {
-			$this->conex = new PDO('mysql:host=localhost;dbname=intra-teledat', 'root', '');
+			$this->conex = new PDO(
+												'mysql:host=localhost;dbname=intra-teledat',
+												'root',
+												'',
+												array(
+    											PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    											PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
+												  )
+												);
 		}
 		catch (PDOException $e){
 			$this->conex = null;
